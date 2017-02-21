@@ -1,4 +1,6 @@
 FROM buildpack-deps:xenial
+MAINTAINER Takuma Maruyama <mattak.me@gmail.com>
+# Based on nodejs/docker-node
 
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
